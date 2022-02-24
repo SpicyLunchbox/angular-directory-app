@@ -1,4 +1,4 @@
-<form class="add-form">
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
   <div class="form-control">
     <!-- the for attribute should equal the id attribute of the <input> element to bind them together -->
     <label for="text">Task</label>

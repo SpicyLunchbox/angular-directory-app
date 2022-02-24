@@ -1,2 +1,8 @@
 <!-- inline styling -->
-<button [ngStyle]="{'background-color': color}" class="btn" (click)="onClick()">{{text}}</button>
+<button
+  [ngStyle]="{ 'background-color': color }"
+  class="btn"
+  (click)="onClick()"
+>
+  {{ text }}
+</button>
